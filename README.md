@@ -13,22 +13,25 @@ To run the API Gateway, you first need to complete the configuration file by add
 
 1. Install NGINX:
 
-On mac via Homebrew:
-```
-brew install nginx
-```
-On windows: https://nginx.org/en/docs/windows.html
+    On mac via Homebrew:
+    ```bash
+    brew install nginx
+    ```
+    On Windows: [https://nginx.org/en/docs/windows.html](https://nginx.org/en/docs/windows.html)
 
 2. Start NGINX using the custom config file:
-```
-sudo nginx -c /your/path/load-balancing-exercise/load-balancing-exercise/api-gateway-nginx.conf
-```
-Now the API Gateway should be listening in `localhost:8080`.
 
-Make sure when you refresh the page multiple times you get different port numbers, that means the requests are being distributed across the different instances of the application.
+    ```bash
+    sudo nginx -c /your/path/load-balancing-exercise/load-balancing-exercise/api-gateway-nginx.conf
+    ```
+    Now the API Gateway should be listening on `localhost:8080`.
 
-To stop the API Gateway:
-```
-sudo nginx -s stop 
-```
+    Make sure when you refresh the page multiple times you get different port numbers — that means the requests are being distributed across the different instances of the application.
+
+3. To stop the API Gateway:
+
+    ```bash
+    sudo nginx -s stop
+    ```
+
 
