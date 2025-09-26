@@ -2,7 +2,7 @@
 # Load balancing exercise
 
 <p align="center">
-  <img src="https://github.com/leandrocotsa/sic-load-balancing-exercise/blob/main/repo-assets/load-balancing-diagram.jpg?raw=true" width="600" />
+  <img src="https://raw.githubusercontent.com/leandrocotsa/sic-load-balancing-exercise/refs/heads/main/readme-assets/load-balancing-diagram.jpg" width="600" />
 </p>
 
 In this exercise, you will increase the load-handling capacity of a sample application by running multiple instances and distributing incoming requests between them using an API Gateway configured for load balancing.
